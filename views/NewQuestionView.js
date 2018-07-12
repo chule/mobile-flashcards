@@ -7,7 +7,7 @@ import {
   TextInput,
   KeyboardAvoidingView
 } from 'react-native'
-import { purple } from '../utils/colors'
+import { steelblue } from '../utils/colors'
 import { connect } from 'react-redux'
 import { addCard } from '../actions'
 
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
     borderWidth: 2
   },
   invertedBtn: {
-    borderColor: purple
+    borderColor: steelblue
   }
 })
 

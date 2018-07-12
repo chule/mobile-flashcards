@@ -7,7 +7,7 @@ import thunk from 'redux-thunk'
 import { Constants } from 'expo'
 import { FontAwesome, Ionicons } from '@expo/vector-icons'
 
-import { purple, white, steelblue } from './utils/colors'
+import { white, steelblue } from './utils/colors'
 import ListView from './views/ListView'
 import NewDeckView from './views/NewDeckView'
 import DeckView from './views/DeckView'

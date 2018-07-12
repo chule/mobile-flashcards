@@ -9,7 +9,7 @@ import {
 } from 'react-native'
 import { connect } from 'react-redux'
 
-import { purple } from '../utils/colors'
+import { steelblue, white } from '../utils/colors'
 import { addDeck } from '../actions'
 
 class NewDeckView extends Component {
@@ -57,12 +57,13 @@ class NewDeckView extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: white,
     alignItems: 'center',
     justifyContent: 'center'
   },
   title: {
-    fontSize: 24
+    fontSize: 18,
+    padding: 20
   },
   input: {
     width: 200,
@@ -79,7 +80,7 @@ const styles = StyleSheet.create({
     borderWidth: 2
   },
   invertedBtn: {
-    borderColor: purple
+    borderColor: steelblue
   }
 })
 

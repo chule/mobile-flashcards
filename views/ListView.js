@@ -8,7 +8,7 @@ import {
 } from 'react-native'
 import { connect } from 'react-redux'
 
-import { purple, white } from '../utils/colors'
+import { steelblue, white } from '../utils/colors'
 import { fetchDecks } from '../actions'
 
 class ListView extends Component {
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   },
   item: {
     backgroundColor: white,
-    borderBottomColor: purple,
+    borderBottomColor: steelblue,
     borderBottomWidth: 2,
     flex: 1,
     padding: 20,

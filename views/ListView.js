@@ -12,15 +12,16 @@ import { steelblue, white } from '../utils/colors'
 import { fetchDecks } from '../actions'
 
 class ListView extends Component {
+
   componentWillMount() {
     this.props.fetchData()
   }
+
   renderItem = ({ item, i }) => {
     return (
       <TouchableNativeFeedback
         key={item.title + i}
-        onPress={() =>
-          this.props.navigation.navigate('Deck', { deckTitle: item.title })}
+        onPress={() => this.props.navigation.navigate('Deck', { deckTitle: item.title })}
       >
         <View style={styles.item}>
           <Text style={styles.title}>{item.title}</Text>
@@ -30,6 +31,7 @@ class ListView extends Component {
       </TouchableNativeFeedback>
     )
   }
+
   render() {
     return (
       <View style={styles.container}>

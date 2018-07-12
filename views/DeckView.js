@@ -15,6 +15,13 @@ class DeckView extends Component {
   noQuestions = () => {
     console.log('add a question first')
   }
+
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: navigation.getParam('deckTitle'),
+    };
+  };
+
   render() {
     const deckTitle = this.props.navigation.state.params.deckTitle
     const deck = this.props.decks[deckTitle]

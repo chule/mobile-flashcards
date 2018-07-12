@@ -87,9 +87,21 @@ const MainNavigator = createStackNavigator({
       header: null
     }
   },
-  Deck: { screen: DeckView },
-  NewQuestion: { screen: NewQuestionView },
-  Quiz: { screen: QuizView }
+  Deck: {
+    screen: DeckView
+  },
+  NewQuestion: {
+    screen: NewQuestionView,
+    navigationOptions: {
+      title: 'Add Card'
+    }
+  },
+  Quiz: {
+    screen: QuizView,
+    navigationOptions: {
+      title: 'Quiz'
+    }
+  }
 })
 
 export default class App extends Component {

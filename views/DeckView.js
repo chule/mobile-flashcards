@@ -18,7 +18,7 @@ class DeckView extends Component {
 
   static navigationOptions = ({ navigation }) => {
     return {
-      title: navigation.getParam('deckTitle'),
+      headerTitle: navigation.getParam('deckTitle'),
     };
   };
 

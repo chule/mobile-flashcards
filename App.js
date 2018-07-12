@@ -88,18 +88,23 @@ const MainNavigator = createStackNavigator({
     }
   },
   Deck: {
-    screen: DeckView
+    screen: DeckView,
+    navigationOptions: {
+      headerStyle: { paddingBottom: 20 }
+    }
   },
   NewQuestion: {
     screen: NewQuestionView,
     navigationOptions: {
-      title: 'Add Card'
+      title: 'Add Card',
+      headerStyle: { paddingBottom: 20 }
     }
   },
   Quiz: {
     screen: QuizView,
     navigationOptions: {
-      title: 'Quiz'
+      title: 'Quiz',
+      headerStyle: { paddingBottom: 20 }
     }
   }
 })

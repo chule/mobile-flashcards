@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     borderBottomColor: steelblue,
     borderBottomWidth: 2,
     flex: 1,
-    padding: 20,
+    padding: 50,
     justifyContent: 'center'
   },
   title: {
